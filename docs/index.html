@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Phaneendra Reddy — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <img src="assets/avatar1.jpeg" alt="Phaneendra Reddy" class="logo">
+      <h1>Phaneendra Reddy Naredla</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="assets/Phaneendra_Reddy_resume.pdf" download>Resume</a>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="intro">
+      <h2 id="typewriter"></h2>
+      <p>Backend Engineer • Cloud Developer • Machine Learning Enthusiast</p>
+      <div class="hero-buttons">
+        <a class="cta" href="#projects">View My Work</a>
+        <a class="cta secondary" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h3>About Me</h3>
+    <div class="about-container">
+      <img src="assets/avatar.png" alt="Profile" class="about-img">
+      <p>
+        Hi, I’m <strong>Phaneendra</strong> 👋<br>
+        I’m passionate about building scalable backend systems and deploying
+        them to the cloud. My expertise is in Java, Spring Boot, AWS, and
+        data pipelines with Kafka & PostgreSQL. I love solving problems,
+        mentoring others, and recently started exploring GenAI for backend intelligence.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h3>Education</h3>
+    <div class="grid">
+      <div class="card edu-card">
+        <img src="assets/edu/unt.png" alt="UNT Logo" class="edu-logo">
+        <div>
+          <h4>Master of Computer Science</h4>
+          <p><em>University of North Texas, Denton, TX</em><br>Aug 2023 – May 2025</p>
+        </div>
+      </div>
+      <div class="card edu-card">
+        <img src="assets/edu/griet.png" alt="GRIET Logo" class="edu-logo">
+        <div>
+          <h4>Bachelor of Computer Science and Technology</h4>
+          <p><em>Gokaraju Rangaraju Institute of Engineering and Technology, India</em><br>Aug 2019 – May 2023</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="skill-icons">
+      <img src="assets/icons/java.svg" alt="Java">
+      <img src="assets/icons/python.svg" alt="Python">
+      <img src="assets/icons/aws.svg" alt="AWS">
+      <img src="assets/icons/docker.png" alt="Docker">
+      <img src="assets/icons/postgres.png" alt="PostgreSQL">
+      <img src="assets/icons/kafka.png" alt="Kafka">
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h3>Experience</h3>
+    <div class="grid">
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem;">
+          <img src="assets/exp/unt.png" alt="UNT Logo"
+               style="width:60px;height:60px;border-radius:8px;object-fit:contain;background:#fff;padding:0.25rem;">
+          <h4>Teaching & Research Assistant</h4>
+        </div>
+        <p><em>University of North Texas, Denton, TX</em> <br> May 2024 – May 2025</p>
+        <ul>
+          <li>Taught and mentored 180+ graduate students in Software Development for AI and Software Engineering.</li>
+          <li>Guided projects on scalable backend design, distributed computing, and cloud-native pipelines using Java, Python, Spring Boot, and AWS.</li>
+          <li>Promoted best practices in Git, Jenkins, testing, and API security across projects.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem;">
+          <img src="assets/exp/sova.png" alt="Sova Skills Logo"
+               style="width:60px;height:60px;border-radius:8px;object-fit:contain;background:#fff;padding:0.25rem;">
+          <h4>SDE Intern</h4>
+        </div>
+        <p><em>Sova Skills Education Pvt. Ltd, India</em> <br> Apr 2022 – Jul 2023</p>
+        <ul>
+          <li>Developed RESTful APIs with Java Spring Boot, deployed on AWS EC2 & S3 for modular backend services.</li>
+          <li>Built MongoDB + AWS S3 data pipelines for scalable analytics and automated deployments with Docker & GitHub Actions, reducing release cycles by 40%.</li>
+          <li>Strengthened backend with authentication, authorization, and input validation, collaborating with cross-functional teams.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h3>Featured Projects</h3>
+    <div class="grid">
+      <div class="card project" onclick="openProject('#')">
+        <img src="assets/projects/leaf.jpeg" alt="Leaf Disease Detection">
+        <h4>Leaf Disease Detection</h4>
+        <p>AI-powered system for real-time crop disease classification.</p>
+      </div>
+      <div class="card project" onclick="openProject('#')">
+        <img src="assets/projects/movie.jpeg" alt="Movie Recommender">
+        <h4>Distributed Movie Recommendation</h4>
+        <p>Microservices-based recommendation engine with AWS scaling.</p>
+      </div>
+      <div class="card project" onclick="openProject('#')">
+        <img src="assets/projects/resume.jpeg" alt="Resume Analyzer">
+        <h4>AI-Driven Resume Analyzer</h4>
+        <p>NLP-powered job matching tool with real-time scoring dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h3>Certifications</h3>
+    <div class="cert-list">
+      <img src="assets/certs/aws.png" alt="AWS">
+      <img src="assets/certs/genai.png" alt="GenAI">
+      <img src="assets/certs/ibm.jpeg" alt="IBM">
+      <img src="assets/certs/nptel.jpeg" alt="NPTEL">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <p>Let’s connect! Feel free to reach out.</p>
+    <div class="contact-info">
+      <a href="mailto:naredlaphaneendrareddy@gmail.com">📧 naredlaphaneendrareddy@gmail.com</a>
+      <p><a href="tel:+19408438302">📞 +1 (940) 843-8302</a></p>
+    </div>
+
+    <!-- Messaging Form -->
+    <form id="contact-form" class="contact-form card">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="cta">Send Message</button>
+    </form>
+
+    <div class="socials">
+      <a href="mailto:naredlaphaneendrareddy@gmail.com" target="_blank">
+        <img src="assets/icons/mail.svg" alt="gmail">
+      </a>
+      <a href="https://github.com/PhaneendraReddy" target="_blank">
+        <img src="assets/icons/github.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/phaneendra-reddy-naredla/" target="_blank">
+        <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Phaneendra Reddy | Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
